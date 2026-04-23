@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 
 <body>
@@ -77,7 +78,7 @@
                     </p>
                 </div>
                 <div class="col-sm">
-                    <img src="image/me-1x1.png" alt="Profile Picture" class="about-image" data-aos="fade-down">
+                    <img src="image/me-1x1.png" alt="Profile Picture" class="about-image" data-aos="fade-up">
                 </div>
             </div>
             <div class="social-media" data-aos="fade-up">
@@ -264,23 +265,205 @@
                     <h3>VSCode</h3>
                     <p>Code editor</p>
                 </div>
+
+                <!-- Android Studio -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="1600">
+                    <div class="skill-icon">
+                        <!-- <i class="fab fa-code"></i> -->
+                        <img class="vscode" src="image/android.png" alt="Android Studio" style="width: 100%;">
+                    </div>
+                    <h3>Android Studio</h3>
+                    <p>Code editor</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="portfolio" class="portfolio">
-        <div class="container">
+        <div class="container m-0 p-0">
             <h1 class="cert-title" data-aos="zoom-in">PROJECTS</h1>
-            <div class="row">
-                <div class="col-sm">
-                    The Hyundai Quezon Avenue website is a modern, user-friendly platform designed to provide visitors
-                    with easy access to schedule test drives, request service appointments, and obtain information about
-                    Hyundai vehicles, services, and promotions.
+            <div class="row m-0 p-0">
+                <div class="col-sm left-project">
+
+                    <div class="hqa-description" data-aos="fade-up">
+                        <h1> <strong>HYUNDAI</strong> </h1>
+                        <p style="    font-family: 'Saira Stencil';">
+                            The Hyundai Quezon Avenue website is a modern, user-friendly platform designed to provide
+                            visitors
+                            with easy access to schedule test drives, request service appointments, and obtain
+                            information
+                            about
+                            Hyundai vehicles, services, and promotions.
+                        </p>
+                        <button class="learn-more" onclick="window.location.href='https://hyundaiquezonavenue.com/';"
+                            target="_blank">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">EXPLORE</span>
+                        </button>
+                    </div>
+
+
+                    <img class="hqa-project" src="image/HQA.png" alt="Hyundai Quezon Avenue" class="portfolio-image"
+                        data-aos="fade-up">
                 </div>
-                <div class="col-sm">
-                    <img src="" alt="">
+
+                <div class="col-sm left-project separate-space">
+                    <div class="fqa-description" data-aos="fade-up">
+                        <h1 class="text-black"> <strong>FOTON</strong> </h1>
+                        <p style="font-family: 'Saira Stencil'; color: #000000;">
+                            The Foton Quezon Avenue website is a modern, user-friendly platform designed to provide
+                            visitors with easy access to schedule test drives, request service appointments, and obtain
+                            information about Foton vehicles, services, and promotions.
+                        </p>
+                        <button class="learn-mores text-black"
+                            onclick="window.location.href='https://fotonquezonavenue.com/';" target="_blank">
+                            <span class="circles" aria-hidden="true">
+                                <span class="icons arrows"></span>
+                            </span>
+                            <span class="button-texts">EXPLORE</span>
+                        </button>
+                    </div>
+                    <img class="fqa-project" src="image/FQA.png" alt="Foton Quezon Avenue" class="portfolio-image"
+                        data-aos="fade-up">
                 </div>
+                <div></div>
+                <div class="col-sm left-project card-checklist">
+
+                    <div class="hqa-description" data-aos="fade-up">
+                        <h1> <strong>Checklist</strong> </h1>
+                        <p style="    font-family: 'Saira Stencil';">
+                            Designed to help users easily monitor and inspect their vehicles before proceeding to
+                            maintenance. It provides a user-friendly interface to perform thorough checks on essential
+                            vehicle components, ensuring all necessary maintenance points are reviewed and recorded for
+                            safety and optimal performance.
+                        </p>
+                        <button class="learn-moren" onclick="window.location.href='https://hyundaiquezonavenue.com/';"
+                            target="_blank">
+                            <span class="circlen" aria-hidden="true">
+                                <span class="iconn arrow"></span>
+                            </span>
+                            <span class="button-textn">EXPLORE</span>
+                        </button>
+                    </div>
+
+
+                    <img class="hqa-project" src="image/checklist.png" alt="Checklist" class="portfolio-image"
+                        data-aos="fade-up">
+                </div>
+
+                <div class="col-sm left-project separate-space card-reservation">
+                    <div class="fqa-description" data-aos="fade-up">
+                        <h1 class="text-white"> <strong>Reservation</strong> </h1>
+                        <p style="font-family: 'Saira Stencil'; color: #FFFFFF;">
+                            It is web-based system that allows users to book and manage photobooth services easily. It streamlines the reservation
+                            process, enabling clients to select dates, view availability, and secure their booking online for events and parties.
+                        </p>
+                        <button class="learn-mores text-black"
+                            onclick="window.location.href='https://fotonquezonavenue.com/';" target="_blank">
+                            <span class="circles" aria-hidden="true">
+                                <span class="icons arrows"></span>
+                            </span>
+                            <span class="button-texts text-white">EXPLORE</span>
+                        </button>
+                    </div>
+                    <img class="fqa-project" src="image/photobooth-reservation.png" alt="photobooth reservation"
+                        class="portfolio-image" data-aos="fade-up">
+                </div>
+                <div></div>
+                <div class="col-sm left-project card-checklist">
+
+                    <div class="hqa-description" data-aos="fade-up">
+                        <h1> <strong>TABULATION</strong> </h1>
+                        <p style="    font-family: 'Saira Stencil';">
+                            This project was developed during my third year of college. It is used for events such as dance competitions, pageants,
+                            and other similar events. The system simplifies and speeds up the scoring process, making it easier and faster for judges
+                            to compute scores accurately.
+                        </p>
+                        <button class="learn-moren bg-color" onclick="window.location.href='https://github.com/AsKm3wHy/ETS';"
+                            target="_blank">
+                            <span class="circlen" aria-hidden="true">
+                                <span class="iconn arrow"></span>
+                            </span>
+                            <span class="button-textn">EXPLORE</span>
+                        </button>
+                    </div>
+
+
+                    <img class="hqa-project" src="image/ets.png" alt="Checklist" class="portfolio-image"
+                        data-aos="fade-up">
+                </div>
+
+                <div class="col-sm left-project separate-space card-reservation">
+                    <div class="fqa-description" data-aos="fade-up">
+                        <h1 class="text-white"> <strong>Workify</strong> </h1>
+                        <p style="font-family: 'Saira Stencil'; color: #FFFFFF;">
+                            This project was our final capstone during my fourth year of college. Workify is an online platform that helps schools
+                            select appropriate workplaces for students, improving communication and ensuring placements meet students' needs.
+                        </p>
+                        <button class="learn-mores text-black"
+                            onclick="window.location.href='https://github.com/JASHiNSENNiN/special_project_21';" target="_blank">
+                            <span class="circles" aria-hidden="true">
+                                <span class="icons arrows"></span>
+                            </span>
+                            <span class="button-texts text-white">EXPLORE</span>
+                        </button>
+                    </div>
+                    <img class="fqa-project" src="image/workify.png" alt="photobooth reservation"
+                        class="portfolio-image" data-aos="fade-up">
+                </div>
+
+                <div></div>
+                <div class="col-sm left-project card-checklist">
+
+                    <div class="hqa-description" data-aos="fade-up">
+                        <h1> <strong>Kiosk OLSHCO visitor</strong> </h1>
+                        <p style="    font-family: 'Saira Stencil';">
+                            Kiosk OLSHCO Visitor is a system developed with .NET, C#, and SQL to efficiently manage visitor check-ins and check-
+                            outs at OLSHCO, streamlining visitor tracking and security
+                        </p>
+                        <button class="learn-moren bg-color" onclick="window.location.href='https://github.com/AsKm3wHy/OLSHCO';"
+                            target="_blank">
+                            <span class="circlen" aria-hidden="true">
+                                <span class="iconn arrow"></span>
+                            </span>
+                            <span class="button-textn">EXPLORE</span>
+                        </button>
+                    </div>
+
+
+                    <img class="hqa-project" src="image/kios.png" alt="Checklist" class="portfolio-image"
+                        data-aos="fade-up">
+                </div>
+
+                <div class="col-sm left-project separate-space card-reservation">
+                    <div class="fqa-description" data-aos="fade-up">
+                        <h1 class="text-white"> <strong>Smart Gate Lock System</strong> </h1>
+                        <p style="font-family: 'Saira Stencil'; color: #FFFFFF;">
+                            The Smart Gate Lock System uses Arduino with C++ and C, featuring face recognition, fingerprint sensor, RFID, and
+                            remote access for secure and convenient gate control.
+                        </p>
+                        <button class="learn-mores text-black"
+                            onclick="window.location.href='https://github.com/AsKm3wHy/Smart-Gate-Lock-System';" target="_blank">
+                            <span class="circles" aria-hidden="true">
+                                <span class="icons arrows"></span>
+                            </span>
+                            <span class="button-texts text-white">EXPLORE</span>
+                        </button>
+                    </div>
+                    <img class="fqa-project" src="image/smart-door-lock-system.png" alt="photobooth reservation"
+                        class="portfolio-image" data-aos="fade-up">
+                </div>
+
+
+
+
+
+
+
             </div>
+
         </div>
     </section>
 
@@ -304,6 +487,33 @@
         </div>
     </section>
 
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="https://www.facebook.com/Migiinnn"><i class="fab fa-facebook"></i></a>
+            <a href="https://tiktok.com/@hyundaicarsbymiguel"><i class="fab fa-tiktok"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <!-- <a href="#certificate">Certificate</a> -->
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Projects</a>
+
+            </p>
+
+            <p>Made with Bootstrap, HTML, CSS,and JS by Miquel.</p>
+        </div>
+
+    </footer>
 
 
     <script src="js/style.js"></script>
