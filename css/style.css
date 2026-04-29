@@ -973,6 +973,9 @@ button:hover .button-textn {
   .card-checklist {
     margin-top: 0;
   }
+  header {
+    top: 0;
+  }
 
   .card-reservation {
     margin-top: 0;
