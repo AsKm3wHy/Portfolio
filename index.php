@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +30,9 @@
             <nav id="navbar" data-aos="fade-left">
                 <a href="#Home">Home</a>
                 <a href="#About">About</a>
-                <!-- <a href="#certificate">Certificate</a> -->
                 <a href="#skills">Skills</a>
                 <a href="#portfolio">Projects</a>
+                <a class="contact-link" href="#contact">Contact</a>
             </nav>
 
             <!-- Contact Button -->
@@ -86,7 +87,8 @@
                         class="fab fa-facebook"></i></a>
                 <a href="https://tiktok.com/@hyundaicarsbymiguel" target="_blank" class="social-link"><i
                         class="fab fa-tiktok"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/natividad-miguel-von-a-35a564304" target="_blank"
+                    class="social-link"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
             </div>
 
@@ -339,8 +341,8 @@
                             vehicle components, ensuring all necessary maintenance points are reviewed and recorded for
                             safety and optimal performance.
                         </p>
-                        <button class="learn-moren" onclick="window.location.href='https://hyundaiquezonavenue.com/';"
-                            target="_blank">
+                        <button class="learn-moren"
+                            onclick="window.location.href='https://github.com/AsKm3wHy/esjay_check';" target="_blank">
                             <span class="circlen" aria-hidden="true">
                                 <span class="iconn arrow"></span>
                             </span>
@@ -357,11 +359,13 @@
                     <div class="fqa-description" data-aos="fade-up">
                         <h1 class="text-white"> <strong>Reservation</strong> </h1>
                         <p style="font-family: 'Saira Stencil'; color: #FFFFFF;">
-                            It is web-based system that allows users to book and manage photobooth services easily. It streamlines the reservation
-                            process, enabling clients to select dates, view availability, and secure their booking online for events and parties.
+                            It is web-based system that allows users to book and manage photobooth services easily. It
+                            streamlines the reservation
+                            process, enabling clients to select dates, view availability, and secure their booking
+                            online for events and parties.
                         </p>
                         <button class="learn-mores text-black"
-                            onclick="window.location.href='https://fotonquezonavenue.com/';" target="_blank">
+                            onclick="window.location.href='http://rommelgarcia.com/';" target="_blank">
                             <span class="circles" aria-hidden="true">
                                 <span class="icons arrows"></span>
                             </span>
@@ -377,12 +381,14 @@
                     <div class="hqa-description" data-aos="fade-up">
                         <h1> <strong>TABULATION</strong> </h1>
                         <p style="    font-family: 'Saira Stencil';">
-                            This project was developed during my third year of college. It is used for events such as dance competitions, pageants,
-                            and other similar events. The system simplifies and speeds up the scoring process, making it easier and faster for judges
+                            This project was developed during my third year of college. It is used for events such as
+                            dance competitions, pageants,
+                            and other similar events. The system simplifies and speeds up the scoring process, making it
+                            easier and faster for judges
                             to compute scores accurately.
                         </p>
-                        <button class="learn-moren bg-color" onclick="window.location.href='https://github.com/AsKm3wHy/ETS';"
-                            target="_blank">
+                        <button class="learn-moren bg-color"
+                            onclick="window.location.href='https://github.com/AsKm3wHy/ETS';" target="_blank">
                             <span class="circlen" aria-hidden="true">
                                 <span class="iconn arrow"></span>
                             </span>
@@ -399,11 +405,14 @@
                     <div class="fqa-description" data-aos="fade-up">
                         <h1 class="text-white"> <strong>Workify</strong> </h1>
                         <p style="font-family: 'Saira Stencil'; color: #FFFFFF;">
-                            This project was our final capstone during my fourth year of college. Workify is an online platform that helps schools
-                            select appropriate workplaces for students, improving communication and ensuring placements meet students' needs.
+                            This project was our final capstone during my fourth year of college. Workify is an online
+                            platform that helps schools
+                            select appropriate workplaces for students, improving communication and ensuring placements
+                            meet students' needs.
                         </p>
                         <button class="learn-mores text-black"
-                            onclick="window.location.href='https://github.com/JASHiNSENNiN/special_project_21';" target="_blank">
+                            onclick="window.location.href='https://github.com/JASHiNSENNiN/special_project_21';"
+                            target="_blank">
                             <span class="circles" aria-hidden="true">
                                 <span class="icons arrows"></span>
                             </span>
@@ -420,11 +429,12 @@
                     <div class="hqa-description" data-aos="fade-up">
                         <h1> <strong>Kiosk OLSHCO visitor</strong> </h1>
                         <p style="    font-family: 'Saira Stencil';">
-                            Kiosk OLSHCO Visitor is a system developed with .NET, C#, and SQL to efficiently manage visitor check-ins and check-
+                            Kiosk OLSHCO Visitor is a system developed with .NET, C#, and SQL to efficiently manage
+                            visitor check-ins and check-
                             outs at OLSHCO, streamlining visitor tracking and security
                         </p>
-                        <button class="learn-moren bg-color" onclick="window.location.href='https://github.com/AsKm3wHy/OLSHCO';"
-                            target="_blank">
+                        <button class="learn-moren bg-color"
+                            onclick="window.location.href='https://github.com/AsKm3wHy/OLSHCO';" target="_blank">
                             <span class="circlen" aria-hidden="true">
                                 <span class="iconn arrow"></span>
                             </span>
@@ -441,11 +451,13 @@
                     <div class="fqa-description" data-aos="fade-up">
                         <h1 class="text-white"> <strong>Smart Gate Lock System</strong> </h1>
                         <p style="font-family: 'Saira Stencil'; color: #FFFFFF;">
-                            The Smart Gate Lock System uses Arduino with C++ and C, featuring face recognition, fingerprint sensor, RFID, and
+                            The Smart Gate Lock System uses Arduino with C++ and C, featuring face recognition,
+                            fingerprint sensor, RFID, and
                             remote access for secure and convenient gate control.
                         </p>
                         <button class="learn-mores text-black"
-                            onclick="window.location.href='https://github.com/AsKm3wHy/Smart-Gate-Lock-System';" target="_blank">
+                            onclick="window.location.href='https://github.com/AsKm3wHy/Smart-Gate-Lock-System';"
+                            target="_blank">
                             <span class="circles" aria-hidden="true">
                                 <span class="icons arrows"></span>
                             </span>
@@ -487,15 +499,64 @@
         </div>
     </section>
 
+    <section class="contact" id="contact"
+        style=" background-image: url('image/contact-area.png'); background-size: cover; background-position: center;">
+        <div class="contact_us">
+            <div class="responsive-container-block bigContainer">
+                <div class="responsive-container-block Container">
+                    <div class="responsive-cell-block wk-desk-5 wk-ipadp-4 wk-tab-12 wk-mobile-12">
+                        <img class="mainImg" src="image/contact-me.png">
+                    </div>
+                    <div class="responsive-cell-block wk-desk-7 wk-ipadp-8 wk-tab-12 wk-mobile-12">
+                        <p class="text-blk heading">
+                            Contact Me
+                        </p>
+                        <form class="formTable" id="izml">
+                            <div class="firstRow">
+                                <div class="fullNameArea">
+                                    <p class="cardHead">
+                                        Full Name
+                                    </p>
+                                    <input class="fullName" id="fullName" name="Full Name" type="text" required>
+                                    <span class="error-message" id="nameError"></span>
+                                </div>
+                                <div class="emailArea">
+                                    <p class="cardHead">
+                                        Email Address
+                                    </p>
+                                    <input class="email" id="email" name="Email" type="text" autocomplete="off"
+                                        required>
+                                    <span class="error-message" id="emailError"></span>
+                                </div>
+                            </div>
+                            <div class="messageArea">
+                                <p class="cardHead">
+                                    Message
+                                </p>
+                                <textarea class="message" cols="30" id="message" name="Message" rows="10"></textarea>
+                            </div>
+                            <a class="submit" href="#" id="w-c-s-bgc_p-1-dm-id-4">
+                                Send Message
+                            </a>
+                            <div class="success-message" id="successMessage" style="display: none;">
+                                Submitted Successfully!
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="footer-distributed">
 
         <div class="footer-right">
 
-            <a href="https://www.facebook.com/Migiinnn"><i class="fab fa-facebook"></i></a>
-            <a href="https://tiktok.com/@hyundaicarsbymiguel"><i class="fab fa-tiktok"></i></a>
-            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/Migiinnn" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://tiktok.com/@hyundaicarsbymiguel" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
 
         </div>
 
@@ -504,9 +565,9 @@
             <p class="footer-links">
                 <a href="#Home">Home</a>
                 <a href="#About">About</a>
-                <!-- <a href="#certificate">Certificate</a> -->
                 <a href="#skills">Skills</a>
                 <a href="#portfolio">Projects</a>
+                <a href="#contact">Contact</a>
 
             </p>
 
@@ -520,9 +581,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1200,
-        });
+    AOS.init({
+        duration: 1200,
+    });
     </script>
 </body>
 
