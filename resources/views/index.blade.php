@@ -57,8 +57,19 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="container h-[100vh] m-auto w-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
+    <section id="home" class="relative isolate overflow-hidden min-h-screen">
+        <div class="home-molecules" aria-hidden="true">
+            <span class="molecule molecule-1"></span>
+            <span class="molecule molecule-2"></span>
+            <span class="molecule molecule-3"></span>
+            <span class="molecule molecule-4"></span>
+            <span class="molecule molecule-5"></span>
+            <span class="molecule molecule-6"></span>
+            <span class="molecule molecule-7"></span>
+            <span class="molecule molecule-8"></span>
+        </div>
+
+        <div class="container relative z-10 h-[100vh] m-auto w-auto grid grid-cols-1 md:grid-cols-2 gap-4 ">
 
             <div class="p-4  text-white w-full h-100 flex flex-col m-auto justify-center">
 
@@ -588,7 +599,7 @@
     </section>
 
     <section id="contact">
-        <div class="container w-full m-auto justify-center items-center mt-5">
+        <div class="container w-full m-auto justify-center items-center mt-5 py-25">
             <h5 class="text-[#4274D9] text-1xl font-bold text-center">Contact</h5>
             <h1 class="text-5xl font-bold text-center text-white mb-10">Get In Touch</h1>
             <div class="text-center glass-card-contact m-auto p-4 ">
