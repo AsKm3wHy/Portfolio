@@ -642,7 +642,7 @@
     </section>
 
     <footer>
-        <div class="container mx-auto py-6">
+        <div class="container mx-auto">
             <p>&copy; 2026 Miguel Von. All rights reserved.</p>
         </div>
     </footer>
