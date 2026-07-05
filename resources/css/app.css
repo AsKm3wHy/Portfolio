@@ -1,0 +1,478 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+@layer utilities {
+    .home-heading {
+        font-family: var(--font-sans);
+    }
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+        82.3deg,
+        rgba(205, 50, 252, 2) 10.8%,
+        rgba(72, 185, 250, 1) 94.3%
+    );
+    transition: all 0.475s;
+}
+
+.btn-view {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(
+        82.3deg,
+        rgba(205, 50, 252, 1) 10.8%,
+        rgba(72, 185, 250, 1) 94.3%
+    );
+}
+
+.btn-contact {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    background-size: 400%;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.btn-resume {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    background-size: 400%;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.Migs {
+    background: linear-gradient(
+        82.3deg,
+        rgba(205, 50, 252, 1) 10.8%,
+        rgba(72, 185, 250, 1) 94.3%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    background-color: #101828;
+}
+
+.col2 {
+    background-color: #1b2435;
+    border-radius: 1.5rem;
+    padding: 20px;
+}
+
+.aboutme {
+    border-radius: 1rem;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 28px;
+    transition: 0.3s ease;
+}
+
+.container {
+    width: min(1150px, 92%);
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-work {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(
+        82.3deg,
+        rgba(205, 50, 252, 2) 10.8%,
+        rgba(72, 185, 250, 1) 94.3%
+    );
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.glass-card-skills {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.glass-card-skills:hover {
+    border-color: rgba(56, 189, 248, 0.45);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    duration: 0.3s ease;
+}
+
+.glass-card-contact {
+    height: 100%;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.glass-card-contact:hover {
+    border-color: rgba(56, 189, 248, 0.45);
+}
+
+.glass-card-projects {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.glass-card-content {
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 15px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+
+.glass-card-link {
+    width: 95%;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 26px;
+    padding: 15px;
+    margin: auto;
+    transition: 0.3s ease;
+}
+
+.glass-card-link:hover {
+    border-color: rgba(56, 189, 248, 0.45);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    duration: 0.3s ease;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.gmail {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.plain-text {
+    font-size: 13.6px;
+}
+
+.project-category {
+    margin: 5rem 0 28px;
+    font-size: 1.8rem;
+    color: #e5e7eb;
+    border-left: 5px solid #38bdf8;
+    padding-left: 14px;
+    font-weight: bold;
+}
+
+.image-project {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.card-content {
+    margin: auto;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.project-meta {
+    color: #7dd3fc;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    display: block;
+    color: #7dd3fc;
+    font-size: 0.78rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-card {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+.tags span {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.1);
+    color: #7dd3fc;
+    font-size: 0.78rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    color: #e5e7eb;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: grid;
+    gap: 16px;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+footer {
+    padding: 35px 0;
+    text-align: center;
+    color: #94a3b8;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+section {
+    padding: 100px 0;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+.success-message {
+    color: #28a745;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .title-name {
+        font-size: 40px;
+    }
+
+    #typewriter {
+        font-size: 39px;
+        margin: 10px 0;
+    }
+
+    .profile-image {
+        padding: 0;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    .content-about-me {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .content-projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .box-project {
+        width: 50%;
+    }
+
+    .about-content {
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .project-content {
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .container {
+        width: min(100%, 92%);
+    }
+
+    .col2 {
+        padding: 12px;
+    }
+
+    #home .container {
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    .btn-view,
+    .btn-contact,
+    .btn-resume,
+    .btn-work {
+        display: block;
+        width: 100%;
+        margin: 0.75rem 0 0;
+    }
+
+    .btn-contact,
+    .btn-resume {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .box {
+        height: auto;
+        padding: 20px;
+    }
+
+    .glass-card-contact {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .glass-card-skills,
+    .glass-card-projects,
+    .glass-card-content,
+    .glass-card-link,
+    .glass-card {
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .project-category {
+        margin: 3rem 0 20px;
+        font-size: 1.3rem;
+    }
+
+    .contact-form {
+        gap: 12px;
+    }
+
+    .form-control {
+        padding: 12px 14px;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+}
