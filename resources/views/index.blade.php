@@ -330,7 +330,8 @@
                     </div>
 
                     <div class="tags">
-                        <span class="tag">Laravel</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Bootstrap</span>
                         <span class="tag">JavaScript</span>
@@ -348,8 +349,8 @@
                             and promotions.</p>
                     </div>
                     <div class="tags">
-                        <span class="tag">Laravel</span>
-                        <span class="tag">PHP</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                         <span class="tag">Bootstrap</span>
                         <span class="tag">JavaScript</span>
                     </div>
@@ -384,7 +385,8 @@
                             parties.</p>
                     </div>
                     <div class="tags">
-                        <span class="tag">Laravel</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Bootstrap</span>
                         <span class="tag">JavaScript</span>
@@ -402,7 +404,8 @@
                             for judges to compute scores accurately.</p>
                     </div>
                     <div class="tags">
-                        <span class="tag">Laravel</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Bootstrap</span>
                         <span class="tag">JavaScript</span>
@@ -420,7 +423,8 @@
                             needs.</p>
                     </div>
                     <div class="tags">
-                        <span class="tag">Laravel</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Bootstrap</span>
                         <span class="tag">JavaScript</span>
