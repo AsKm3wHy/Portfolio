@@ -2394,6 +2394,9 @@ footer {
     textarea {
         min-height: 120px;
     }
+    .tags span {
+        font-size: 0.73rem;
+    }
 }
 @property --tw-translate-x {
     syntax: "*";
