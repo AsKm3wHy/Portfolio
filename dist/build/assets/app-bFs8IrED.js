@@ -1,1 +1,130 @@
-var e=[`Web Developer`,`Graphic Designer`,`UI/UX Designer`],t=0,n=0,r=``,i=!1;function a(){let o=document.getElementById(`typewriter`);o&&(r=e[t],i?(o.textContent=r.substring(0,n-1),n--,n===0&&(i=!1,t++,t===e.length&&(t=0))):(o.textContent=r.substring(0,n+1),n++,n===r.length&&(i=!0)),setTimeout(a,100))}function o(){let e=document.getElementById(`mobile-menu-btn`),t=document.getElementById(`mobile-menu`);!e||!t||(e.addEventListener(`click`,()=>{let n=e.getAttribute(`aria-expanded`)===`true`;e.setAttribute(`aria-expanded`,String(!n)),t.classList.toggle(`hidden`,n)}),t.querySelectorAll(`a`).forEach(n=>{n.addEventListener(`click`,()=>{e.setAttribute(`aria-expanded`,`false`),t.classList.add(`hidden`)})}))}document.addEventListener(`DOMContentLoaded`,()=>{a(),o()});var s=document.getElementById(`Form`),c=document.getElementById(`successMessage`),l=document.getElementById(`fullName`),u=document.getElementById(`email`),d=document.getElementById(`nameError`),f=document.getElementById(`emailError`);function p(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}function m(){let e=!0;return d&&(d.textContent=``),f&&(f.textContent=``),l&&l.value.trim()===``?(d&&(d.textContent=`Full Name is required`),e=!1):l&&l.value.trim().length<2&&(d&&(d.textContent=`Full Name must be at least 2 characters`),e=!1),u&&u.value.trim()===``?(f&&(f.textContent=`Email is required`),e=!1):u&&!p(u.value.trim())&&(f&&(f.textContent=`Please enter a valid email address`),e=!1),e}function h(e){if(e.preventDefault(),!s||!l||!u||!m())return;let t=new FormData(s);fetch(`https://formspree.io/f/mlgaqzjk`,{method:`POST`,body:t,headers:{Accept:`application/json`}}).then(e=>{e.ok?(c&&(c.style.display=`block`),s.reset(),setTimeout(()=>{c&&(c.style.display=`none`)},5e3)):alert(`There was an error submitting the form. Please try again.`)}).catch(e=>{console.error(`Error:`,e),alert(`There was an error submitting the form. Please try again.`)})}s&&s.addEventListener(`submit`,h);
+var e = [`Web Developer`, `Graphic Designer`, `UI/UX Designer`],
+    t = 0,
+    n = 0,
+    r = ``,
+    i = !1;
+function a() {
+    let o = document.getElementById(`typewriter`);
+    o &&
+        ((r = e[t]),
+        i
+            ? ((o.textContent = r.substring(0, n - 1)),
+              n--,
+              n === 0 && ((i = !1), t++, t === e.length && (t = 0)))
+            : ((o.textContent = r.substring(0, n + 1)),
+              n++,
+              n === r.length && (i = !0)),
+        setTimeout(a, 100));
+}
+function o() {
+    let e = document.getElementById(`mobile-menu-btn`),
+        t = document.getElementById(`mobile-menu`);
+    !e ||
+        !t ||
+        (e.addEventListener(`click`, () => {
+            let n = e.getAttribute(`aria-expanded`) === `true`;
+            (e.setAttribute(`aria-expanded`, String(!n)),
+                t.classList.toggle(`hidden`, n));
+        }),
+        t.querySelectorAll(`a`).forEach((n) => {
+            n.addEventListener(`click`, () => {
+                (e.setAttribute(`aria-expanded`, `false`),
+                    t.classList.add(`hidden`));
+            });
+        }));
+}
+document.addEventListener(`DOMContentLoaded`, () => {
+    (a(), o());
+});
+var s = document.getElementById(`Form`),
+    c = document.getElementById(`successMessage`),
+    l = document.getElementById(`fullName`),
+    u = document.getElementById(`email`),
+    d = document.getElementById(`nameError`),
+    f = document.getElementById(`emailError`);
+function p(e) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+}
+function m() {
+    let e = !0;
+    return (
+        d && (d.textContent = ``),
+        f && (f.textContent = ``),
+        l && l.value.trim() === ``
+            ? (d && (d.textContent = `Full Name is required`), (e = !1))
+            : l &&
+              l.value.trim().length < 2 &&
+              (d && (d.textContent = `Full Name must be at least 2 characters`),
+              (e = !1)),
+        u && u.value.trim() === ``
+            ? (f && (f.textContent = `Email is required`), (e = !1))
+            : u &&
+              !p(u.value.trim()) &&
+              (f && (f.textContent = `Please enter a valid email address`),
+              (e = !1)),
+        e
+    );
+}
+function handleFormSubmit(event) {
+    event.preventDefault();
+
+    if (!form || !fullNameInput || !emailInput) return;
+
+    if (!validateForm()) {
+        return;
+    }
+
+    const formData = new FormData(form);
+    const formAction = form.getAttribute("action") || "/contact";
+
+    fetch(formAction, {
+        method: "POST",
+        body: formData,
+        headers: {
+            Accept: "application/json",
+        },
+    })
+        .then(async (response) => {
+            const data = await response.json().catch(() => ({}));
+
+            if (response.ok) {
+                if (successMessage) {
+                    successMessage.textContent =
+                        data.message || "Thanks! Your message has been sent.";
+                    successMessage.style.display = "block";
+                }
+
+                form.reset();
+
+                setTimeout(() => {
+                    if (successMessage) {
+                        successMessage.style.display = "none";
+                    }
+                }, 5000);
+            } else {
+                if (successMessage) {
+                    successMessage.textContent =
+                        data.message ||
+                        "There was an error submitting the form. Please try again.";
+                    successMessage.style.display = "block";
+                }
+                alert(
+                    data.message ||
+                        "There was an error submitting the form. Please try again.",
+                );
+            }
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            if (successMessage) {
+                successMessage.textContent =
+                    "There was an error submitting the form. Please try again.";
+                successMessage.style.display = "block";
+            }
+            alert("There was an error submitting the form. Please try again.");
+        });
+}
+
+if (form) {
+    form.addEventListener("submit", handleFormSubmit);
+}

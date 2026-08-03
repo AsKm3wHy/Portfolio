@@ -638,7 +638,8 @@
                     </a>
 
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/mlgaqzjk" method="POST" id="Form">
+                <form class="contact-form" action="{{ url('/contact') }}" method="POST" id="Form">
+                    @csrf
                     <input class="form-control" type="text" placeholder="Full Name" id="fullName"
                         name="fullName" class="input-field mt-5 required">
                     <span class="error-message" id="nameError"></span>
