@@ -34,14 +34,9 @@ function o() {
         }));
 }
 document.addEventListener(`DOMContentLoaded`, () => {
-    (a(), o());
+    (a(), o(), initForm());
 });
-var s = document.getElementById(`Form`),
-    c = document.getElementById(`successMessage`),
-    l = document.getElementById(`fullName`),
-    u = document.getElementById(`email`),
-    d = document.getElementById(`nameError`),
-    f = document.getElementById(`emailError`);
+var s, c, l, u, d, f;
 function p(e) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 }
@@ -65,66 +60,40 @@ function m() {
         e
     );
 }
-function handleFormSubmit(event) {
-    event.preventDefault();
-
-    if (!form || !fullNameInput || !emailInput) return;
-
-    if (!validateForm()) {
-        return;
-    }
-
-    const formData = new FormData(form);
-    const formAction = form.getAttribute("action") || "/contact";
-
-    fetch(formAction, {
-        method: "POST",
-        body: formData,
-        headers: {
-            Accept: "application/json",
-        },
+function h(e) {
+    if ((e.preventDefault(), !s || !l || !u || !m())) return;
+    let t = new FormData(s);
+    fetch(`https://formspree.io/f/mlgaqzjk`, {
+        method: `POST`,
+        body: t,
+        headers: { Accept: `application/json` },
     })
-        .then(async (response) => {
-            const data = await response.json().catch(() => ({}));
-
-            if (response.ok) {
-                if (successMessage) {
-                    successMessage.textContent =
-                        data.message || "Thanks! Your message has been sent.";
-                    successMessage.style.display = "block";
-                }
-
-                form.reset();
-
-                setTimeout(() => {
-                    if (successMessage) {
-                        successMessage.style.display = "none";
-                    }
-                }, 5000);
-            } else {
-                if (successMessage) {
-                    successMessage.textContent =
-                        data.message ||
-                        "There was an error submitting the form. Please try again.";
-                    successMessage.style.display = "block";
-                }
-                alert(
-                    data.message ||
-                        "There was an error submitting the form. Please try again.",
-                );
-            }
+        .then((e) => {
+            e.ok
+                ? (c && (c.style.display = `block`),
+                  s.reset(),
+                  setTimeout(() => {
+                      c && (c.style.display = `none`);
+                  }, 5e3))
+                : alert(
+                      `There was an error submitting the form. Please try again.`,
+                  );
         })
-        .catch((error) => {
-            console.error("Error:", error);
-            if (successMessage) {
-                successMessage.textContent =
-                    "There was an error submitting the form. Please try again.";
-                successMessage.style.display = "block";
-            }
-            alert("There was an error submitting the form. Please try again.");
+        .catch((e) => {
+            (console.error(`Error:`, e),
+                alert(
+                    `There was an error submitting the form. Please try again.`,
+                ));
         });
 }
-
-if (form) {
-    form.addEventListener("submit", handleFormSubmit);
+function initForm() {
+    s = document.getElementById(`Form`);
+    c = document.getElementById(`successMessage`);
+    l = document.getElementById(`fullName`);
+    u = document.getElementById(`email`);
+    d = document.getElementById(`nameError`);
+    f = document.getElementById(`emailError`);
+    if (s) {
+        s.addEventListener(`submit`, h);
+    }
 }
