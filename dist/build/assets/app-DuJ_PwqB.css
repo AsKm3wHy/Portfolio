@@ -1121,7 +1121,11 @@ html {
         background-color: #1b1b18;
     }
     .bg-\[\#101828\] {
-        background-color: #101828;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba(16, 24, 40, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
     }
     .bg-\[\#FDFDFC\] {
         background-color: #fdfdfc;
