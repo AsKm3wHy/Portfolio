@@ -2317,6 +2317,17 @@ footer {
     font-weight: 500;
     display: block;
 }
+
+#typewriter {
+    display: inline-block;
+    min-width: 16ch;
+    min-height: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
 @media (width<=768px) {
     body {
         overflow-x: hidden;
